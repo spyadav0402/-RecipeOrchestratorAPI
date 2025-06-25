@@ -1,0 +1,17 @@
+logging:
+  level:
+    com.example.recipeapi: WARN
+    org.springframework.web: WARN
+    org.hibernate: ERROR
+  file:
+    name: /var/log/recipe-api/recipe-api.log
+
+spring:
+  jpa:
+    show-sql: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

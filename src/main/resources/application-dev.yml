@@ -1,0 +1,18 @@
+logging:
+  level:
+    com.example.recipeapi: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
